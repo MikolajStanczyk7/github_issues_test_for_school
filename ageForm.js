@@ -5,7 +5,7 @@ const wynik = document.querySelector("#wynik");
 przycisk.addEventListener("click", function () {
     const wiek = Number(poleWiek.value);
 
-    if (wiek > 18 && wiek < 65) {
+    if (wiek >= 18 && wiek <= 65) {
         wynik.textContent = "Wiek zaakceptowany";
     } else {
         wynik.textContent = "Nieprawidłowy wiek";
